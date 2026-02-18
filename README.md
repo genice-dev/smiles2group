@@ -41,6 +41,17 @@ data = smiles_to_group_data("[*]CCCC", name="butyl")
 - **除く水素**：アンカーに結合した水素を1つ除く（イオン結合で置き換えるため）。
 - **z 軸**：残基の重心が z 軸方向になるように回転。
 
+## 開発・GitHub への公開
+
+リポジトリは `genice-dev/smiles2group` を想定しています。
+
+1. GitHub で [genice-dev/smiles2group](https://github.com/genice-dev/smiles2group) を新規作成（空のリポジトリ、README なしで可）。
+2. 初回プッシュ:
+   ```bash
+   cd /path/to/smiles2group
+   git push -u origin main
+   ```
+
 ## ライセンス
 
 MIT
