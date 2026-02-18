@@ -1,0 +1,30 @@
+[project]
+name = "smiles2group"
+version = "0.1.0"
+description = "SMILES から GenIce3 Group プラグイン用の原子配置を生成する（RDKit 使用）"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+authors = [
+    { name = "Masakazu Matsumoto", email = "vitroid@gmail.com" }
+]
+dependencies = [
+    "numpy>=2.0",
+    "rdkit>=2024.3",
+]
+
+[project.scripts]
+smiles2group = "smiles2group.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/genice-dev/smiles2group"
+Repository = "https://github.com/genice-dev/smiles2group"
+Issues = "https://github.com/genice-dev/smiles2group/issues"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["smiles2group*"]
